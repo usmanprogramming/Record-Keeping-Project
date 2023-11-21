@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 html,
 body {
@@ -14,11 +16,38 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  > .input-fields {
+  > .form {
     display: flex;
     justify-content: center;
     gap: 16px;
     align-items: center;
-    width: 100%;
+    width: 60%;
   }
+}
+.data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  > .data-heading {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 16px;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+.data-val {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
